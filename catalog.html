@@ -41,49 +41,65 @@
 				
 			</div>
 			
-			<h2>Добро пожаловать в магазин готовых макетов</h2>
-						
 		</header>
-		
+			
 		<main class="container">
+			
+			<h2>Добро пожаловать в магазин готовых макетов</h2>
 			
 			<section class="filer">
 				
-				<form>
+				<form action="#" method="get">
 					
-					<h2>Стоимость:</h2>
-				
-						<input type="range" multiple min="0" max="15000" step="1" value="50"> 
-				
-					<h2>Сетка</h2>
+					<fieldset>
 					
-						<input type="radio" name="adaptive">
-						<label>Адаптивная</label>
+						<legend>Стоимость:</legend>
 
-						<input type="radio" name="fix">
-						<label>Фиксированная</label>
-
-						<input type="radio" name="rubber">
-						<label>Резиновая</label>
+							<input type="range" multiple min="0" max="15000" step="1" value="50">
+						
+					</fieldset>
 					
-					<h2>Особенности:</h2>
+					<fieldset>
+
+						<legend>Сетка:</legend>
+						
+						<p>
+							<input type="radio" name="site-layout" value="adaptive" id="adaptive-radio">
+								<label for="adaptive-radio">Адаптивная</label>
+								<br>
+							<input type="radio" name="site-layout" value="fix" id="fix-radio">
+								<label for="fix-radio">Фиксированная</label>
+								<br>
+							<input type="radio" name="site-layout" value="rubber" id="rubber-radio">
+								<label for="rubber-radio">Резиновая</label>
+						</p>
+						
+					</fieldset>
 					
-						<input type="checkbox" name="slider">
-						<label>Слайдер</label>
+					<fieldset>
 
-						<input type="checkbox" name="advantage">
-						<label>Блок преимуществ</label>
+						<legend>Особенности:</legend>
+						
+						<p>
+							<input type="checkbox" name="slider" id="slider-checkbox">
+								<label for="checkbox">Слайдер</label>
+								<br>
+							<input type="checkbox" name="advantage" id="advantage-checkbox">
+								<label for="advantage-checkbox">Блок преимуществ</label>
+								<br>
+							<input type="checkbox" name="news" id="news-checkbox">
+								<label for="advantage-checkbox">Новости</label>
+								<br>
+							<input type="checkbox" name="gallery" id="gallery-checkbox">
+								<label for="gallery-checkbox">Галерея</label>
+								<br>
+							<input type="checkbox" name="cart" id="cart-checkbox">
+								<label for="cart-checkbox">Корзина</label>
+						</p>
+						
+					</fieldset>
 
-						<input type="checkbox" name="news">
-						<label>Новости</label>
-
-						<input type="checkbox" name="gallery">
-						<label>Галерея</label>
-
-						<input type="checkbox" name="cart">
-						<label>Корзина</label>
-					
-					<input type="submit" value="Показать">
+						<input type="submit" value="Показать">
 						
 				
 				</form>
@@ -92,16 +108,21 @@
 			
 			<section class="shop">
 				
-				<p>
-					Сортировать:
-				</p>
-				
-				<a href="#">По цене</a>
-				<a href="#">По типу</a>
-				<a href="#">По функционалу</a>
-				
-				<a href="#">Вниз</a>
-				<a href="#">Вверх</a>
+				<div class="shop-sort">
+					
+					<p>
+						<span>Сортировать:</span>
+
+						<span><a href="#">По цене</a></span>
+						<span><a href="#">По типу</a></span>
+						<span><a href="#">По функционалу</a></span>
+
+						<span class="arrow-down"><a href="#">Вниз</a></span>
+						<span class="arrow-up"><a href="#">Вверх</a></span>
+						
+					</p>
+					
+				</div>
 				
 				<div class="shop-item">
 					<a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Aviator"></a>
@@ -138,6 +159,10 @@
 				
 			</section>
 			
+		</main>
+		
+		<footer class="container">
+			
 			<section class="contacts">
 				
 				<div>
@@ -152,7 +177,7 @@
 						тел. +7 (812) 275-75-75
 					</p>
 					
-					<button class="btn-contacts">Напишите нам</button>
+					<button type="button" class="btn-contacts">Напишите нам</button>
 				
 				</div>
 				
@@ -164,10 +189,6 @@
 				
 			</section>
 		
-		</main>
-		
-		<footer class="container">
-			
 			<div class="footer-social">
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>

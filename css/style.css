@@ -1,0 +1,23 @@
+body {
+	font-family: Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	line-height:20px;
+	color:#666666;
+}
+
+h1 {
+	font-family: Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:36px;
+	line-height:30px;
+	color:#000000;
+}
+
+h2 {
+	font-family: Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:18px;
+	line-height:30px;
+	color:#000000;
+}

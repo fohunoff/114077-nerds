@@ -11,7 +11,7 @@
 	
 	<body>
 
-		<header class="main-header">
+		<header class="main-header clearfix">
 		
 			<div class="container">
 			
@@ -31,7 +31,7 @@
 							<a href="#">Клиенты</a>
 						</li>
 						<li>
-							<a href="#">Магазин</a>
+							<a href="catalog.html">Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -47,11 +47,11 @@
 					
 		</header>
 			
-		<main class="container">
+		<main class="container clearfix">
 			
-			<h2>Добро пожаловать в магазин готовых макетов</h2>
+			<p class="head-text">Добро пожаловать в магазин готовых макетов</p>
 			
-			<section class="filer">
+			<section class="filter">
 				
 				<form action="#" method="get">
 					
@@ -67,15 +67,20 @@
 
 						<legend>Сетка:</legend>
 						
-						
+						<div>
 							<input type="radio" name="site-layout" value="adaptive" id="adaptive-radio">
 								<label for="adaptive-radio">Адаптивная</label>
-								
+						</div>
+						
+						<div>							
 							<input type="radio" name="site-layout" value="fix" id="fix-radio">
 								<label for="fix-radio">Фиксированная</label>
-								
+						</div>
+						
+						<div>
 							<input type="radio" name="site-layout" value="rubber" id="rubber-radio">
 								<label for="rubber-radio">Резиновая</label>
+						</div>
 						
 						
 					</fieldset>
@@ -84,26 +89,35 @@
 
 						<legend>Особенности:</legend>
 						
-						
+						<div>
 							<input type="checkbox" name="slider" id="slider-checkbox">
-								<label for="checkbox">Слайдер</label>
-								
+								<label for="slider-checkbox">Слайдер</label>
+						</div>
+							
+						<div>
 							<input type="checkbox" name="advantage" id="advantage-checkbox">
 								<label for="advantage-checkbox">Блок преимуществ</label>
+						</div>
 								
+						<div>
 							<input type="checkbox" name="news" id="news-checkbox">
-								<label for="advantage-checkbox">Новости</label>
-								
+								<label for="news-checkbox">Новости</label>
+						</div>
+							
+						<div>
 							<input type="checkbox" name="gallery" id="gallery-checkbox">
 								<label for="gallery-checkbox">Галерея</label>
+						</div>
 								
+						<div>
 							<input type="checkbox" name="cart" id="cart-checkbox">
 								<label for="cart-checkbox">Корзина</label>
+						</div>
 						
 						
 					</fieldset>
 
-						<input type="submit" value="Показать">
+						<button type="button" class="btn-filter">Показать</button>
 						
 				
 				</form>
@@ -115,11 +129,11 @@
 				<div class="shop-sort">
 					
 					<p>
-						<span>Сортировать:</span>
+						<span class="shop-sort-category">Сортировать:</span>
 
-						<span><a href="#">По цене</a></span>
-						<span><a href="#">По типу</a></span>
-						<span><a href="#">По функционалу</a></span>
+						<span class="shop-sort-category"><a href="#">По цене</a></span>
+						<span class="shop-sort-category"><a href="#">По типу</a></span>
+						<span class="shop-sort-category"><a href="#">По функционалу</a></span>
 
 						<span class="arrow-down"><a href="#">Вниз</a></span>
 						<span class="arrow-up"><a href="#">Вверх</a></span>
@@ -128,84 +142,106 @@
 					
 				</div>
 				
-				<div class="shop-item">
-					<a href="#"><img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator"></a>
-				</div>
-				
-				<div class="shop-item">
-					<a href="#"><img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset"></a>
-				</div>
-				
-				<div class="shop-item">
-					<a href="#"><img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte"></a>
-				</div>
-				
-				<div class="shop-item">
-					<a href="#"><img src="img/item-4.jpg" width="240" height="240" alt="Шаблон Marqule"></a>
-				</div>
-				
-				<div class="shop-item">
-					<a href="#"><img src="img/item-5.jpg" width="240" height="240" alt="Шаблон Avenue"></a>
-				</div>
-				
-				<div class="shop-item">
-					<a href="#"><img src="img/item-6.jpg" width="240" height="240" alt="Шаблон Dovetail"></a>
-				</div>
+				<section class="clearfix">
+					
+					<div class="shop-item">
+						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						<a href="#"><img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator"></a>
+					</div>
+
+					<div class="shop-item">
+						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						<a href="#"><img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset"></a>
+					</div>
+
+					<div class="shop-item">
+						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						<a href="#"><img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte"></a>
+					</div>
+
+					<div class="shop-item">
+						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						<a href="#"><img src="img/item-4.jpg" width="240" height="240" alt="Шаблон Marqule"></a>
+					</div>
+
+					<div class="shop-item">
+						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						<a href="#"><img src="img/item-5.jpg" width="240" height="240" alt="Шаблон Avenue"></a>
+					</div>
+
+					<div class="shop-item">
+						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						<a href="#"><img src="img/item-6.jpg" width="240" height="240" alt="Шаблон Dovetail"></a>
+					</div>
+					
+				</section>
 				
 				<div class="pages">
 				
-				<a href="#" class="pages-btn">1</a>
-				<a href="#" class="pages-btn">2</a>
-				<a href="#" class="pages-btn">3</a>
-				<a href="#" class="pages-btn">Следующая</a>
+					<a href="#" class="pages-btn">1</a>
+					<a href="#" class="pages-btn">2</a>
+					<a href="#" class="pages-btn">3</a>
+					<a href="#" class="pages-btn">Следующая</a>
 				
-			</div>
+				</div>
 				
 			</section>
 			
 		</main>
 		
-		<footer class="container">
-			
-			<section class="contacts">
-				
-				<div>
-					
-					<h2>NЁRDS DESIGN STUDIO</h2>
-					
-					<p>
-						191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
-					</p>
-					
-					<p>
-						тел. +7 (812) 275-75-75
-					</p>
-					
-					<button type="button" class="btn-contacts">Напишите нам</button>
-				
-				</div>
-				
-				<div class="contact-logo">
-					
-					<a href="#"><img src="img/map-marker.png" width="230" height="190" alt="Маркер на карте"></a>
-				
-				</div>
-				
-			</section>
+		<hr>
 		
-			<div class="footer-social">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-			</div>
+		<footer>
+				
+			<div class="container clearfix">
 			
-			<div>
+				<section class="contact">
+					
+					<div class="contact-adress">
+
+						<h2>NЁRDS DESIGN STUDIO</h2>
+
+						<p>
+							191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
+						</p>
+
+						<p>
+							тел. +7 (812) 275-75-75
+						</p>
+
+						<button type="button" class="btn-contacts">Напишите нам</button>
+
+					</div>
+
+					<div class="contact-logo">
+
+						<a href="#"><img src="img/map-marker.png" width="230" height="190" alt="Маркер на карте"></a>
+
+					</div>
+					
+					<div class="contact-map">
+
+						<img src="img/map.jpg" width="1199" height="416" alt="Карта расположения студии">
+
+					</div>
+
+				</section>
 				
-				<h2>Давайте дружить, это выгодно!</h2>
-				
-				<p>
-					Скидка 10% для друзей из социальных сетей
-				</p>					
+				<div class="footer-social">
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</div>
+
+				<div class="footer-slogan">
+
+					<h2>Давайте дружить, это выгодно!</h2>
+
+					<p>
+						Скидка 10% для друзей из социальных сетей
+					</p>					
+
+				</div>
 				
 			</div>
 			

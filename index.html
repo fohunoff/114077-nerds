@@ -11,7 +11,7 @@
 	
 	<body>
 
-		<header class="main-header">
+		<header class="main-header clearfix">
 		
 			<div class="container">
 			
@@ -31,7 +31,7 @@
 							<a href="#">Клиенты</a>
 						</li>
 						<li>
-							<a href="#">Магазин</a>
+							<a href="catalog.html">Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -64,64 +64,61 @@
 
 			</section>
 			
-			<section class="offer">
+			<section class="offer clearfix">
 				
-				<ul>
+				<div class="offer-web">
+
+					<div>
+						<img src="img/web-sites.jpg" width="240" height="125" alt="Веб-сайты">
+					</div>
+
+					<h1>Веб-сайты</h1>
+
+					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+
+					<a href="#" class="btn">Заказать</a>
+
+				</div>
+
+				<div class="offer-apps">
+
+					<div>
+						<img src="img/apps.jpg" width="240" height="125" alt="Приложения">
+					</div>
+
+					<h1>Приложения</h1>
+
+					<p>Покорите топ-10 приложений в AppStrore и Google Play</p>
+
+					<a href="#" class="btn">Заказать</a>
+
+				</div>
+
+				<div class="offer-presentation">
+
+					<div>
+						<img src="img/presentation.jpg" width="240" height="125" alt="Презентация">
+					</div>
+
+					<h1>Презентация</h1>
+
+					<p>Вы даже не подозреваете,  насколько вы изумительны!</p>
+
+					<a href="#" class="btn">Заказать</a>
+
+				</div>
 					
-					<li>
-				
-						<div>
-							<img src="img/web-sites.jpg" width="240" height="125" alt="Веб-сайты">
-						</div>
-
-						<h2>Веб-сайты</h2>
-
-						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-
-						<a href="#" class="btn">Заказать</a>
-
-					</li>
-
-					<li>
-
-						<div>
-							<img src="img/apps.jpg" width="240" height="125" alt="Приложения">
-						</div>
-
-						<h2>Приложения</h2>
-
-						<p>Покорите топ-10 приложений в AppStrore и Google Play</p>
-
-						<a href="#" class="btn">Заказать</a>
-
-					</li>
-
-					<li>
-
-						<div>
-							<img src="img/presentation.jpg" width="240" height="125" alt="Презентация">
-						</div>
-
-						<h2>Презентация</h2>
-
-						<p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-
-						<a href="#" class="btn">Заказать</a>
-
-					</li>
-					
-				</ul>
-				
 			</section>
 			
 			<hr>
 			
-			<section class="studio">
+			<section class="studio clearfix">
 				
-				<div>
-					<h1>
+				<div class="description">
+					
+					<p class="lead">
 						Мы — маленькая, но гордая дизайн-студия из Краснодара. 
-					</h1>
+					</p>
 
 					<p>
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
@@ -140,9 +137,10 @@
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 
 					</ul>
+					
 				</div>
 				
-				<div>
+				<div class="benefit">
 					
 					<div class="studio-logo">
 					
@@ -188,55 +186,67 @@
 				
 				<div class="profect-logo">
 					
-					<img src="img/barbershop.png" width="150" height="100" alt="Логотип Barbersop Borodinski">
+					<img src="img/barbershop.png" width="200" height="100" alt="Логотип Barbersop Borodinski">
 				
 				</div>
 			
 			</section>
+			
+			<hr>
 			
 		</main>
 		
-		<footer class="container">
+		<footer>
+				
+			<div class="container clearfix">
 			
-			<section class="contacts">
+				<section class="contact">
+					
+					<div class="contact-adress">
+
+						<h2>NЁRDS DESIGN STUDIO</h2>
+
+						<p>
+							191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
+						</p>
+
+						<p>
+							тел. +7 (812) 275-75-75
+						</p>
+
+						<button type="button" class="btn-contacts">Напишите нам</button>
+
+					</div>
+
+					<div class="contact-logo">
+
+						<a href="#"><img src="img/map-marker.png" width="230" height="190" alt="Маркер на карте"></a>
+
+					</div>
+					
+					<div class="contact-map">
+
+						<img src="img/map.jpg" width="1199" height="416" alt="Карта расположения студии">
+
+					</div>
+
+				</section>
 				
-				<div>
-					
-					<h2>NЁRDS DESIGN STUDIO</h2>
-					
-					<p>
-						191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
-					</p>
-					
-					<p>
-						тел. +7 (812) 275-75-75
-					</p>
-					
-					<button type="button" class="btn-contacts">Напишите нам</button>
-				
+				<div class="footer-social">
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 				</div>
-				
-				<div class="contact-logo">
-					
-					<a href="#"><img src="img/map-marker.png" width="230" height="190" alt="Маркер на карте"></a>
-				
+
+				<div class="footer-slogan">
+
+					<h2>Давайте дружить, это выгодно!</h2>
+
+					<p>
+						Скидка 10% для друзей из социальных сетей
+					</p>					
+
 				</div>
-				
-			</section>
-		
-			<div class="footer-social">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-			</div>
-			
-			<div>
-				
-				<h2>Давайте дружить, это выгодно!</h2>
-				
-				<p>
-					Скидка 10% для друзей из социальных сетей
-				</p>					
 				
 			</div>
 			

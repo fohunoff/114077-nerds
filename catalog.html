@@ -5,51 +5,61 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Барбершоп</title>
 		
+		<link href='https://fonts.googleapis.com/css?family=Roboto:500,500italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		
+		<link href="css/normalize.css" rel="stylesheet" type='text/css'>
 		<link href="css/style.css" rel="stylesheet" type='text/css'>
 		
 	</head>
 	
 	<body>
 
-		<header class="main-header clearfix">
+		<header class="main-header">
 		
-			<div class="container">
+			<div class="container clearfix">
 			
 				<div class="main-header-logo">
 					
-					<a href="#"><img src="img/logo.png" width="140" height="55" alt="Логотип"></a>
+					<a href="index.html"><img src="img/logo.png" width="140" height="55" alt="Логотип"></a>
 				
+				</div>
+				
+				<div class="header-cart">
+						
+					<a class="basket" href="#">Корзина</a>
+						
 				</div>
 				
 				<nav class="main-navigator">
 					
 					<ul>
 						<li>
-							<a href="#">Студия</a>
+							<a href="index.html">Студия</a>
 						</li>
 						<li>
 							<a href="#">Клиенты</a>
 						</li>
 						<li>
-							<a href="catalog.html">Магазин</a>
+							<a class="active" href="catalog.html">Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
 						</li>
-						<li>
-							<a href="#">Корзина</a>
-						</li>
+						
+						
 					</ul>
-				
+					
 				</nav>
 				
 			</div>
 					
 		</header>
 			
-		<main class="container clearfix">
+		<main>
 			
-			<p class="head-text">Добро пожаловать в магазин готовых макетов</p>
+			<div class="welcome">Добро пожаловать в магазин<br>готовых макетов</div>
+			
+			<div class="features container clearfix">
 			
 			<section class="filter">
 				
@@ -134,9 +144,9 @@
 						<span class="shop-sort-category"><a href="#">По цене</a></span>
 						<span class="shop-sort-category"><a href="#">По типу</a></span>
 						<span class="shop-sort-category"><a href="#">По функционалу</a></span>
-
-						<span class="arrow-down"><a href="#">Вниз</a></span>
-						<span class="arrow-up"><a href="#">Вверх</a></span>
+						
+						<span class="arrow-up"><a href="#" title="Вверх"></a></span>
+						<span class="arrow-down"><a href="#" title="Вниз"></a></span>
 						
 					</p>
 					
@@ -145,32 +155,54 @@
 				<section class="clearfix">
 					
 					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator"></a>
+						<a href="#">
+							
+							<div class="browser"></div>
+						
+							<img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator">
+							
+						</a>
+					</div>
+
+					<div class="shop-item">		
+						<a href="#">
+							
+							<div class="browser"></div>
+						
+							<img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset">
+							
+						</a>
 					</div>
 
 					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset"></a>
+						
+						<a href="#">
+							
+							<div class="browser"></div>
+							
+							<img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte">
+						
+						</a>
 					</div>
 
 					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte"></a>
-					</div>
-
-					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						
+						<div class="browser"></div>
+						
 						<a href="#"><img src="img/item-4.jpg" width="240" height="240" alt="Шаблон Marqule"></a>
 					</div>
 
 					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						
+						<div class="browser"></div>
+						
 						<a href="#"><img src="img/item-5.jpg" width="240" height="240" alt="Шаблон Avenue"></a>
 					</div>
 
 					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
+						
+						<div class="browser"></div>
+						
 						<a href="#"><img src="img/item-6.jpg" width="240" height="240" alt="Шаблон Dovetail"></a>
 					</div>
 					
@@ -178,28 +210,36 @@
 				
 				<div class="pages">
 				
-					<a href="#" class="pages-btn">1</a>
-					<a href="#" class="pages-btn">2</a>
-					<a href="#" class="pages-btn">3</a>
-					<a href="#" class="pages-btn">Следующая</a>
+					<a class="active" href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a class="next" href="#">Следующая</a>
 				
 				</div>
 				
 			</section>
+				
+			</div>
 			
 		</main>
 		
 		<hr>
 		
 		<footer>
-				
-			<div class="container clearfix">
 			
-				<section class="contact">
+			<div class="contact-map">
+
+				<img src="img/map.jpg" width="1199" height="416" alt="Карта расположения студии">
+
+			</div>
+				
+			<div class="container">
+			
+				<section class="contact clearfix">
 					
 					<div class="contact-adress">
 
-						<h2>NЁRDS DESIGN STUDIO</h2>
+						<h1>NЁRDS DESIGN STUDIO</h1>
 
 						<p>
 							191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
@@ -213,35 +253,32 @@
 
 					</div>
 
-					<div class="contact-logo">
+					<div class="contact-marker">
 
 						<a href="#"><img src="img/map-marker.png" width="230" height="190" alt="Маркер на карте"></a>
 
 					</div>
-					
-					<div class="contact-map">
-
-						<img src="img/map.jpg" width="1199" height="416" alt="Карта расположения студии">
-
-					</div>
-
+				
 				</section>
 				
+						
 				<div class="footer-social">
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					<a class="social-btn vk" href="#"> </a>
+					<a class="social-btn fb" href="#"></a>
+					<a class="social-btn inst" href="#"></a>
 				</div>
 
 				<div class="footer-slogan">
 
 					<h2>Давайте дружить, это выгодно!</h2>
 
-					<p>
+					<p class="sale">
 						Скидка 10% для друзей из социальных сетей
 					</p>					
 
 				</div>
+					
+				
 				
 			</div>
 			

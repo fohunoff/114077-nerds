@@ -239,17 +239,17 @@ h2 {
     overflow:hidden;
 }
 
-.slide-text{
-    width:470px;
-    padding:30px 0;
-    color:#283136;
-}
-
 .slide-title {
 	font-size:36px;
     line-height:1;
     font-weight: 600;
     color:black;
+}
+
+.slide-text{
+    width:470px;
+	padding:30px 0;
+    color:#283136;
 }
 
 .btn-slider {
@@ -559,8 +559,16 @@ h2 {
 .contact-map {
 	position: relative;
 	
+	
+	height: 416px;	
+	
 	margin-top: 85px;
 	text-align: center;
+	
+	background-color: #eeeeee;
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	
 	z-index: 1;
 }
@@ -568,7 +576,7 @@ h2 {
 .contact {
 	position: absolute;
 	
-	width: 900px;
+	width: 250px;
 	
 	margin-top: -330px;
 	

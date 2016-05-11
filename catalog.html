@@ -28,16 +28,16 @@
 					
 					<ul>
 						<li>
-							<a  href="index.html">Студия</a>
+							<a class="nav-point" href="index.html">Студия</a>
 						</li>
 						<li>
-							<a href="#">Клиенты</a>
+							<a class="nav-point" href="#">Клиенты</a>
 						</li>
 						<li>
-							<a class="active" href="catalog.html">Магазин</a>
+							<span class="nav-active">Магазин</span>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a class="nav-point" href="#">Контакты</a>
 						</li>
 						
 						
@@ -45,7 +45,7 @@
 					
 					<div class="basket" >
 						
-						<a href="#">Корзина</a>
+						<a class="nav-point cart" href="#">Корзина</a>
 						
 					</div>
 					
@@ -59,306 +59,311 @@
 			
 			<div class="welcome">
 				
-				Добро пожаловать в магазин<br> готовых макетов
+				<div class="container">
+				
+					Добро пожаловать в магазин<br> готовых макетов
+					
+				</div>
 				
 			</div>
 			
-			<div class="features container clearfix">
-			
-			<section class="filter">
+			<div class="features">
 				
-				<form action="#" method="get">
-					
-					<fieldset>
-					
-						<legend>Стоимость:</legend>
-						
-							<div class="range-filter">
-								
-								<div class="range-controls">
-									
-									<div class="scale">
-										
-										<div class="bar" style="margin-left: 5%; width: 75%"></div>
-									
+				<div class="container clearfix">
+			
+					<section class="filter">
+
+						<form action="#" method="get">
+
+							<fieldset>
+
+								<legend>Стоимость:</legend>
+
+									<div class="range-filter">
+
+										<div class="range-controls">
+
+											<div class="scale">
+
+												<div class="bar" style="margin-left: 5%; width: 75%"></div>
+
+											</div>
+
+											<div class="toggle toggle-min"></div>
+											<div class="toggle toggle-max"></div>
+
+										</div>
+
+										<div class="price-controls">
+
+											<label class="min-price">от<input name="min-price" type="text" value="0"></label>
+
+											<label class="max-price"> до<input name="max-price" type="text" value="15000"></label>
+
+										</div>
+
 									</div>
-									
-									<div class="toggle toggle-min"></div>
-          							<div class="toggle toggle-max"></div>
+
+							</fieldset>
+
+							<fieldset class="filter-marking">
+
+								<legend>Сетка:</legend>
+
+
+									<label class="radio-checkbox" for="adaptive-radio">
+										<input type="radio" name="site-layout" value="adaptive" id="adaptive-radio" checked>
+										<span class="radio-indicator"></span>
+									Адаптивная</label>
+
+
+
+									<label class="radio-checkbox" for="fix-radio">
+										<input type="radio" name="site-layout" value="fix" id="fix-radio">
+										<span class="radio-indicator"></span>
+									Фиксированная</label>
+
+
+
+									<label class="radio-checkbox" for="rubber-radio">
+										<input type="radio" name="site-layout" value="rubber" id="rubber-radio">
+										<span class="radio-indicator"></span>
+									Резиновая</label>
+
+
+
+							</fieldset>
+
+							<fieldset class="filter-spec">
+
+								<legend>Особенности:</legend>
+
+									<label class="multi-checkbox" for="slider-checkbox">
+										<input type="checkbox" name="slider" id="slider-checkbox" checked>
+										<span class="checkbox-indicator"></span>
+									Слайдер</label>
+
+
+									<label class="multi-checkbox" for="advantage-checkbox">
+										<input type="checkbox" name="advantage" id="advantage-checkbox">
+										<span class="checkbox-indicator"></span>
+									Блок преимуществ</label>
+
+
+									<label class="multi-checkbox" for="news-checkbox">
+										<input type="checkbox" name="news" id="news-checkbox" checked>
+										<span class="checkbox-indicator"></span>
+									Новости</label>
+
+
+									<label class="multi-checkbox" for="gallery-checkbox">
+										<input type="checkbox" name="gallery" id="gallery-checkbox">
+										<span class="checkbox-indicator"></span>
+									Галерея</label>
+
+
+									<label class="multi-checkbox" for="cart-checkbox">
+										<input type="checkbox" name="cart" id="cart-checkbox">
+										<span class="checkbox-indicator"></span>
+									Корзина</label>
+
+
+							</fieldset>
+
+								<a class="btn-filter" href="#">Показать</a>
+
+
+						</form>
+
+					</section>
+
+					<section class="shop">
+
+						<div class="shop-sort">
+
+							<span>Сортировать:</span>
+
+							<a class="shop-sort-category" href="#">По цене</a>
+							<a class="shop-sort-category" href="#">По типу</a>
+							<a class="shop-sort-category" href="#">По функционалу</a>
+
+							<a class="arrow-up" href="#" title="Вверх"></a>
+							<a class="arrow-down active-arrow" href="#" title="Вниз"></a>
+
+						</div>
+
+						<section class="clearfix">
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Aviator</a>
+
+										<p>Одностраничный макет с авторским дизайном</p>
+
+										<a class="btn btn-banner" href="">8000 p.</a>
+
+									</div>
 
 								</div>
-								
-								<div class="price-controls">
-									
-									<label class="min-price">от<input name="min-price" type="text" value="0"></label>
-									
-          							<label class="max-price"> до<input name="max-price" type="text" value="15000"></label>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Sunset</a>
+
+										<p>Интернет-магазин с личным кабинетом</p>
+
+										<a class="btn btn-banner" href="">10000 p.</a>
+
+									</div>
 
 								</div>
-            
-      						</div>
-						
-					</fieldset>
-					
-					<fieldset class="filter-marking">
 
-						<legend>Сетка:</legend>
-						
-						
-							<label class="radio-checkbox" for="adaptive-radio">
-								<input type="radio" name="site-layout" value="adaptive" id="adaptive-radio">
-								<span class="radio-indicator"></span>
-							Адаптивная</label>
-						
-						
-						
-							<label class="radio-checkbox" for="fix-radio">
-								<input type="radio" name="site-layout" value="fix" id="fix-radio">
-								<span class="radio-indicator"></span>
-							Фиксированная</label>
-						
-						
-						
-							<label class="radio-checkbox" for="rubber-radio">
-								<input type="radio" name="site-layout" value="rubber" id="rubber-radio">
-								<span class="radio-indicator"></span>
-							Резиновая</label>
-						
-						
-						
-					</fieldset>
-					
-					<fieldset class="filter-spec">
+							</div>
 
-						<legend>Особенности:</legend>
-						
-							<label class="multi-checkbox" for="slider-checkbox">
-								<input type="checkbox" name="slider" id="slider-checkbox">
-								<span class="checkbox-indicator"></span>
-							Слайдер</label>
-						
-							
-							<label class="multi-checkbox" for="advantage-checkbox">
-								<input type="checkbox" name="advantage" id="advantage-checkbox">
-								<span class="checkbox-indicator"></span>
-							Блок преимуществ</label>
-						
-								
-							<label class="multi-checkbox" for="news-checkbox">
-								<input type="checkbox" name="news" id="news-checkbox">
-								<span class="checkbox-indicator"></span>
-							Новости</label>
-						
-							
-							<label class="multi-checkbox" for="gallery-checkbox">
-								<input type="checkbox" name="gallery" id="gallery-checkbox">
-								<span class="checkbox-indicator"></span>
-							Галерея</label>
-						
-								
-							<label class="multi-checkbox" for="cart-checkbox">
-								<input type="checkbox" name="cart" id="cart-checkbox">
-								<span class="checkbox-indicator"></span>
-							Корзина</label>
-						
-												
-					</fieldset>
+							<div class="shop-item">
 
-						<a class="btn-filter" href="#">Показать</a>
-						
-				
-				</form>
-				
-			</section>
-			
-			<section class="shop">
-				
-				<div class="shop-sort">
-					
-					<p>
-						<span class="shop-sort-category">Сортировать:</span>
+								<div class="browser">
 
-						<span class="shop-sort-category"><a href="#">По цене</a></span>
-						<span class="shop-sort-category"><a href="#">По типу</a></span>
-						<span class="shop-sort-category"><a href="#">По функционалу</a></span>
-						
-						<span class="arrow-up"><a href="#" title="Вверх"></a></span>
-						<span class="arrow-down"><a class="active" href="#" title="Вниз"></a></span>
-						
-					</p>
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Forte</a>
+
+										<p>Отличный макет для личного блога</p>
+
+										<a class="btn btn-banner" href="">5000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-4.jpg" width="240" height="240" alt="Шаблон Marqule">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Modern Organic THAI</a>
+
+										<p>Сайт для ресторана быстрого питания</p>
+
+										<a class="btn btn-banner" href="">12000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-5.jpg" width="240" height="240" alt="Шаблон Avenue">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Avenue</a>
+
+										<p>Макет для блога  о путешествиях</p>
+
+										<a class="btn btn-banner" href="">8000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-6.jpg" width="240" height="240" alt="Шаблон Dovetail">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Dovetail</a>
+
+										<p>Интернет-магазин с галереей товаров</p>
+
+										<a class="btn btn-banner" href="">14000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</section>
+
+						<div class="pages">
+
+							<a class="btn-pages active" href="#">1</a>
+							<a class="btn-pages" href="#">2</a>
+							<a class="btn-pages" href="#">3</a>
+							<a class="btn-pages next" href="#">Следующая</a>
+
+						</div>
+
+					</section>
 					
 				</div>
-				
-				<section class="clearfix">
-					
-					<div class="shop-item">
-						
-							<div class="browser">
-								
-								<div class="browser-top"></div>
-								
-								<div class="shablon">
-						
-									<img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator">
-								
-								</div>
-					
-								<div class="info-banner">
-								
-									<a class="name-sample" href="#">Aviator</a>
-								
-									<p>Одностраничный макет с авторским дизайном</p>
-								
-									<a class="btn btn-banner" href="">8000 p.</a>
-								
-								</div>
-							
-							</div>
-						
-					</div>
-					
-					<div class="shop-item">
-						
-							<div class="browser">
-								
-								<div class="browser-top"></div>
-								
-								<div class="shablon">
-						
-									<img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset">
-								
-								</div>
-					
-								<div class="info-banner">
-								
-									<a class="name-sample" href="#">Sunset</a>
-								
-									<p>Интернет-магазин с личным кабинетом</p>
-								
-									<a class="btn btn-banner" href="">10000 p.</a>
-								
-								</div>
-							
-							</div>
-						
-					</div>
-					
-					<div class="shop-item">
-						
-							<div class="browser">
-								
-								<div class="browser-top"></div>
-								
-								<div class="shablon">
-						
-									<img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte">
-								
-								</div>
-					
-								<div class="info-banner">
-								
-									<a class="name-sample" href="#">Forte</a>
-								
-									<p>Отличный макет для личного блога</p>
-								
-									<a class="btn btn-banner" href="">5000 p.</a>
-								
-								</div>
-							
-							</div>
-						
-					</div>
-					
-					<div class="shop-item">
-						
-							<div class="browser">
-								
-								<div class="browser-top"></div>
-								
-								<div class="shablon">
-						
-									<img src="img/item-4.jpg" width="240" height="240" alt="Шаблон Marqule">
-								
-								</div>
-					
-								<div class="info-banner">
-								
-									<a class="name-sample" href="#">Modern Organic THAI</a>
-								
-									<p>Сайт для ресторана быстрого питания</p>
-								
-									<a class="btn btn-banner" href="">12000 p.</a>
-								
-								</div>
-							
-							</div>
-						
-					</div>
-					
-					<div class="shop-item">
-						
-							<div class="browser">
-								
-								<div class="browser-top"></div>
-								
-								<div class="shablon">
-						
-									<img src="img/item-5.jpg" width="240" height="240" alt="Шаблон Avenue">
-								
-								</div>
-					
-								<div class="info-banner">
-								
-									<a class="name-sample" href="#">Avenue</a>
-								
-									<p>Макет для блога  о путешествиях</p>
-								
-									<a class="btn btn-banner" href="">8000 p.</a>
-								
-								</div>
-							
-							</div>
-						
-					</div>
-					
-					<div class="shop-item">
-						
-							<div class="browser">
-								
-								<div class="browser-top"></div>
-								
-								<div class="shablon">
-						
-									<img src="img/item-6.jpg" width="240" height="240" alt="Шаблон Dovetail">
-								
-								</div>
-					
-								<div class="info-banner">
-								
-									<a class="name-sample" href="#">Dovetail</a>
-								
-									<p>Интернет-магазин с галереей товаров</p>
-								
-									<a class="btn btn-banner" href="">14000 p.</a>
-								
-								</div>
-							
-							</div>
-						
-					</div>
-					
-				</section>
-				
-				<div class="pages">
-				
-					<a class="active" href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a class="next" href="#">Следующая</a>
-				
-				</div>
-				
-			</section>
 				
 			</div>
 			
@@ -368,7 +373,7 @@
 			
 			<div class="contact-map">
 
-				<img src="img/map.jpg" width="1199" height="416" alt="Карта расположения студии">
+				<img src="img/map.jpg" width="1200" height="416" alt="Карта расположения студии">
 
 			</div>
 				
@@ -381,10 +386,7 @@
 						<h1>NЁRDS DESIGN STUDIO</h1>
 
 						<p>
-							191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
-						</p>
-
-						<p>
+							191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br><br>
 							тел. +7 (812) 275-75-75
 						</p>
 
@@ -392,48 +394,6 @@
 
 					</div>
 					
-					
-					
-					
-					<div class="modal-content">
-						
-						<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-						
-						<form class="write-form" action="#" method="post">
-							
-							<div class="writer-data">
-								<p>Ваше имя:</p>
-							
-								<input type="text" name="writer-name" placeholder="Представьтесь, пожалуйста">
-								
-							</div>
-							
-							<div class="writer-data">
-								
-								<p>Ваш e-mail:</p>
-							
-								<input type="text" name="writer-email" placeholder="Для отправки ответа">
-								
-							</div>
-								
-							<p>Текст письма:</p>
-							
-							<input class="mail-body" type="text" name="writer-text" placeholder="В свободной форме">
-											
-							<a class="btn btn-send" href="#">Отправить</a>
-							
-						</form>
-
-					</div>
-					
-					
-					
-
-					<div class="contact-marker">
-
-						<img src="img/map-marker.png" width="230" height="190" alt="Маркер на карте">
-
-					</div>
 				
 				</section>
 				

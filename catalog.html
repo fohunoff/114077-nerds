@@ -5,19 +5,22 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Барбершоп</title>
 		
+		<link href='https://fonts.googleapis.com/css?family=Roboto:500,500italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		
+		<link href="css/normalize.css" rel="stylesheet" type='text/css'>
 		<link href="css/style.css" rel="stylesheet" type='text/css'>
 		
 	</head>
 	
 	<body>
 
-		<header class="main-header clearfix">
+		<header class="main-header">
 		
-			<div class="container">
+			<div class="container clearfix">
 			
 				<div class="main-header-logo">
 					
-					<a href="#"><img src="img/logo.png" width="140" height="55" alt="Логотип"></a>
+					<a href="index.html"><img src="img/logo.png" width="140" height="55" alt="Логотип"></a>
 				
 				</div>
 				
@@ -25,227 +28,436 @@
 					
 					<ul>
 						<li>
-							<a href="#">Студия</a>
+							<a class="nav-point" href="index.html">Студия</a>
 						</li>
 						<li>
-							<a href="#">Клиенты</a>
+							<a class="nav-point" href="#">Клиенты</a>
 						</li>
 						<li>
-							<a href="catalog.html">Магазин</a>
+							<span class="nav-active">Магазин</span>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a class="nav-point" href="#">Контакты</a>
 						</li>
-						<li>
-							<a href="#">Корзина</a>
-						</li>
+						
+						
 					</ul>
-				
+					
+					<div class="basket" >
+						
+						<a class="nav-point cart" href="#">Корзина</a>
+						
+					</div>
+					
 				</nav>
 				
 			</div>
 					
 		</header>
 			
-		<main class="container clearfix">
+		<main>
 			
-			<p class="head-text">Добро пожаловать в магазин готовых макетов</p>
-			
-			<section class="filter">
+			<div class="welcome">
 				
-				<form action="#" method="get">
-					
-					<fieldset>
-					
-						<legend>Стоимость:</legend>
-
-							<input type="range" multiple min="0" max="15000" step="1" value="50">
-						
-					</fieldset>
-					
-					<fieldset>
-
-						<legend>Сетка:</legend>
-						
-						<div>
-							<input type="radio" name="site-layout" value="adaptive" id="adaptive-radio">
-								<label for="adaptive-radio">Адаптивная</label>
-						</div>
-						
-						<div>							
-							<input type="radio" name="site-layout" value="fix" id="fix-radio">
-								<label for="fix-radio">Фиксированная</label>
-						</div>
-						
-						<div>
-							<input type="radio" name="site-layout" value="rubber" id="rubber-radio">
-								<label for="rubber-radio">Резиновая</label>
-						</div>
-						
-						
-					</fieldset>
-					
-					<fieldset>
-
-						<legend>Особенности:</legend>
-						
-						<div>
-							<input type="checkbox" name="slider" id="slider-checkbox">
-								<label for="slider-checkbox">Слайдер</label>
-						</div>
-							
-						<div>
-							<input type="checkbox" name="advantage" id="advantage-checkbox">
-								<label for="advantage-checkbox">Блок преимуществ</label>
-						</div>
-								
-						<div>
-							<input type="checkbox" name="news" id="news-checkbox">
-								<label for="news-checkbox">Новости</label>
-						</div>
-							
-						<div>
-							<input type="checkbox" name="gallery" id="gallery-checkbox">
-								<label for="gallery-checkbox">Галерея</label>
-						</div>
-								
-						<div>
-							<input type="checkbox" name="cart" id="cart-checkbox">
-								<label for="cart-checkbox">Корзина</label>
-						</div>
-						
-						
-					</fieldset>
-
-						<button type="button" class="btn-filter">Показать</button>
-						
+				<div class="container">
 				
-				</form>
-				
-			</section>
-			
-			<section class="shop">
-				
-				<div class="shop-sort">
-					
-					<p>
-						<span class="shop-sort-category">Сортировать:</span>
-
-						<span class="shop-sort-category"><a href="#">По цене</a></span>
-						<span class="shop-sort-category"><a href="#">По типу</a></span>
-						<span class="shop-sort-category"><a href="#">По функционалу</a></span>
-
-						<span class="arrow-down"><a href="#">Вниз</a></span>
-						<span class="arrow-up"><a href="#">Вверх</a></span>
-						
-					</p>
+					Добро пожаловать в магазин<br> готовых макетов
 					
 				</div>
 				
-				<section class="clearfix">
+			</div>
+			
+			<div class="features">
+				
+				<div class="container clearfix">
+			
+					<section class="filter">
+
+						<form action="#" method="get">
+
+							<fieldset>
+
+								<legend>Стоимость:</legend>
+
+									<div class="range-filter">
+
+										<div class="range-controls">
+
+											<div class="scale">
+
+												<div class="bar" style="margin-left: 5%; width: 75%"></div>
+
+											</div>
+
+											<div class="toggle toggle-min"></div>
+											<div class="toggle toggle-max"></div>
+
+										</div>
+
+										<div class="price-controls">
+
+											<label class="min-price">от<input name="min-price" type="text" value="0"></label>
+
+											<label class="max-price"> до<input name="max-price" type="text" value="15000"></label>
+
+										</div>
+
+									</div>
+
+							</fieldset>
+
+							<fieldset class="filter-marking">
+
+								<legend>Сетка:</legend>
+
+
+									<label class="radio-checkbox" for="adaptive-radio">
+										<input type="radio" name="site-layout" value="adaptive" id="adaptive-radio" checked>
+										<span class="radio-indicator"></span>
+									Адаптивная</label>
+
+
+
+									<label class="radio-checkbox" for="fix-radio">
+										<input type="radio" name="site-layout" value="fix" id="fix-radio">
+										<span class="radio-indicator"></span>
+									Фиксированная</label>
+
+
+
+									<label class="radio-checkbox" for="rubber-radio">
+										<input type="radio" name="site-layout" value="rubber" id="rubber-radio">
+										<span class="radio-indicator"></span>
+									Резиновая</label>
+
+
+
+							</fieldset>
+
+							<fieldset class="filter-spec">
+
+								<legend>Особенности:</legend>
+
+									<label class="multi-checkbox" for="slider-checkbox">
+										<input type="checkbox" name="slider" id="slider-checkbox" checked>
+										<span class="checkbox-indicator"></span>
+									Слайдер</label>
+
+
+									<label class="multi-checkbox" for="advantage-checkbox">
+										<input type="checkbox" name="advantage" id="advantage-checkbox">
+										<span class="checkbox-indicator"></span>
+									Блок преимуществ</label>
+
+
+									<label class="multi-checkbox" for="news-checkbox">
+										<input type="checkbox" name="news" id="news-checkbox" checked>
+										<span class="checkbox-indicator"></span>
+									Новости</label>
+
+
+									<label class="multi-checkbox" for="gallery-checkbox">
+										<input type="checkbox" name="gallery" id="gallery-checkbox">
+										<span class="checkbox-indicator"></span>
+									Галерея</label>
+
+
+									<label class="multi-checkbox" for="cart-checkbox">
+										<input type="checkbox" name="cart" id="cart-checkbox">
+										<span class="checkbox-indicator"></span>
+									Корзина</label>
+
+
+							</fieldset>
+
+								<a class="btn-filter" href="#">Показать</a>
+
+
+						</form>
+
+					</section>
+
+					<section class="shop">
+
+						<div class="shop-sort">
+
+							<span>Сортировать:</span>
+
+							<a class="shop-sort-category" href="#">По цене</a>
+							<a class="shop-sort-category" href="#">По типу</a>
+							<a class="shop-sort-category" href="#">По функционалу</a>
+
+							<a class="arrow-up" href="#" title="Вверх"></a>
+							<a class="arrow-down active-arrow" href="#" title="Вниз"></a>
+
+						</div>
+
+						<section class="clearfix">
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Aviator</a>
+
+										<p>Одностраничный макет с авторским дизайном</p>
+
+										<a class="btn btn-banner" href="">8000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Sunset</a>
+
+										<p>Интернет-магазин с личным кабинетом</p>
+
+										<a class="btn btn-banner" href="">10000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Forte</a>
+
+										<p>Отличный макет для личного блога</p>
+
+										<a class="btn btn-banner" href="">5000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-4.jpg" width="240" height="240" alt="Шаблон Marqule">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Modern Organic THAI</a>
+
+										<p>Сайт для ресторана быстрого питания</p>
+
+										<a class="btn btn-banner" href="">12000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-5.jpg" width="240" height="240" alt="Шаблон Avenue">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Avenue</a>
+
+										<p>Макет для блога  о путешествиях</p>
+
+										<a class="btn btn-banner" href="">8000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shop-item">
+
+								<div class="browser">
+
+									<div class="browser-top"></div>
+
+									<div class="shablon">
+
+										<img src="img/item-6.jpg" width="240" height="240" alt="Шаблон Dovetail">
+
+									</div>
+
+									<div class="info-banner">
+
+										<a class="name-sample" href="#">Dovetail</a>
+
+										<p>Интернет-магазин с галереей товаров</p>
+
+										<a class="btn btn-banner" href="">14000 p.</a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</section>
+
+						<div class="pages">
+
+							<a class="btn-pages active" href="#">1</a>
+							<a class="btn-pages" href="#">2</a>
+							<a class="btn-pages" href="#">3</a>
+							<a class="btn-pages next" href="#">Следующая</a>
+
+						</div>
+
+					</section>
 					
-					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-1.jpg" width="240" height="240" alt="Шаблон Aviator"></a>
-					</div>
-
-					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-2.jpg" width="240" height="240" alt="Шаблон Sunset"></a>
-					</div>
-
-					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-3.jpg" width="240" height="240" alt="Шаблон Forte"></a>
-					</div>
-
-					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-4.jpg" width="240" height="240" alt="Шаблон Marqule"></a>
-					</div>
-
-					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-5.jpg" width="240" height="240" alt="Шаблон Avenue"></a>
-					</div>
-
-					<div class="shop-item">
-						<img src="img/item-browser.png" width="240" height="30" alt="Шапка окна">
-						<a href="#"><img src="img/item-6.jpg" width="240" height="240" alt="Шаблон Dovetail"></a>
-					</div>
-					
-				</section>
-				
-				<div class="pages">
-				
-					<a href="#" class="pages-btn">1</a>
-					<a href="#" class="pages-btn">2</a>
-					<a href="#" class="pages-btn">3</a>
-					<a href="#" class="pages-btn">Следующая</a>
-				
 				</div>
 				
-			</section>
+			</div>
 			
 		</main>
 		
-		<hr>
-		
 		<footer>
-				
-			<div class="container clearfix">
 			
-				<section class="contact">
+			<div class="contact-map">
+
+				<div id="yandex-map"></div>
+
+			</div>
+				
+			<div class="container">
+			
+				<section class="contact clearfix">
 					
 					<div class="contact-adress">
 
-						<h2>NЁRDS DESIGN STUDIO</h2>
+						<h1>NЁRDS DESIGN STUDIO</h1>
 
 						<p>
-							191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
-						</p>
-
-						<p>
+							191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br><br>
 							тел. +7 (812) 275-75-75
 						</p>
 
 						<button type="button" class="btn-contacts">Напишите нам</button>
 
 					</div>
-
-					<div class="contact-logo">
-
-						<a href="#"><img src="img/map-marker.png" width="230" height="190" alt="Маркер на карте"></a>
-
-					</div>
 					
-					<div class="contact-map">
-
-						<img src="img/map.jpg" width="1199" height="416" alt="Карта расположения студии">
-
-					</div>
-
+				
 				</section>
 				
+						
 				<div class="footer-social">
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					<a class="social-btn vk" href="#"> </a>
+					<a class="social-btn fb" href="#"></a>
+					<a class="social-btn inst" href="#"></a>
 				</div>
 
 				<div class="footer-slogan">
 
 					<h2>Давайте дружить, это выгодно!</h2>
 
-					<p>
+					<p class="sale">
 						Скидка 10% для друзей из социальных сетей
 					</p>					
 
 				</div>
+					
+				
 				
 			</div>
 			
 		</footer>
+		
+		<div class="modal-content">
+						
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+
+			<form class="write-form" action="#" method="post">
+
+				<div class="writer-data">
+					<p>Ваше имя:</p>
+
+					<input type="text" name="writer-name" placeholder="Представьтесь, пожалуйста">
+
+				</div>
+
+				<div class="writer-data">
+
+					<p>Ваш e-mail:</p>
+
+					<input type="text" name="writer-email" placeholder="Для отправки ответа">
+
+				</div>
+				
+				<div>
+
+					<p>Текст письма:</p>
+
+					<input class="mail-body" type="text" name="writer-text" placeholder="В свободной форме">
+					
+				</div>
+
+				<button class="btn btn-send" href="#">Отправить</button>
+
+			</form>
+
+		</div>
+		
+		<script src="js/modal-window.min.js"></script>
+		
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=MrKXCKVeKOM5oPjMgkcXz3H3Gm9nfJxg&width=100%&height=416&id=yandex-map&lang=ru_RU&sourceType=constructor&scroll=true"></script>
 			
 	</body>
 	
